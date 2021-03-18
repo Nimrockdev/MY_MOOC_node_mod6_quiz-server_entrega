@@ -340,4 +340,7 @@ app.use((error, req, res, next) => {
 });
 
 // Server started at port 8000
-app.listen(8000);
+app.listen(8000, function(){ 
+    console.log("http://localhost:8000"); 
+});
+module.exports = app;
